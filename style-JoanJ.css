@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@500&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(58, 88, 128)
+}
+
+.cabecera {
+    background-color: #B26D28;
+    height: 70px;
+    color: aliceblue;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#nombre {
+    float: left;
+    margin-left: 30px;
+
+}
+
+#tarea {
+    float: right;
+    margin-right: 30px;
+}
+
+/* Menu*/
+
+.menu {
+    border-left: black 5px solid; 
+    border-right: black 5px solid;
+    border-top: black 5px solid; 
+    border-bottom: black 5px solid;
+    height: 50px;
+    background-color: white;
+}
+
+a {
+    font-size: 24px;
+	padding: 15px;
+	color: black;
+	text-decoration: none;
+}
+
+.menu > ul > li {
+    display: inline-block;
+    position: relative;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .2s;
+}
+
+/* Submenu*/
+
+.submenu {
+	position: absolute;
+	background: #333333;
+    margin-top: 10px;
+	visibility: hidden;
+    width: 140px;
+	opacity: 0;
+	transition: opacity 1.0s;
+    list-style: none;
+}
+
+.submenu li a {
+	display: inline-block;
+    color: white;
+}
+
+.menu li:hover .submenu {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* Page*/
+
+.container > .section {
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+}
+
+.container > .section > h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container > .section > p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+}
+
+.miSection {
+    padding-left: 120px;
+    color: white;
+}
+
+.miSection > section {
+    padding-bottom: 20px;
+}
+
+.miSection > section > p {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+aside {
+    color: white;
+    margin-top: 240px;
+    background-color: #b26d28b0;
+    height: 540px;
+    float: right;
+    width: 20%;
+    text-align: center;
+}
+
+.imagen > img {
+    width: 250px;
+    height: 250px;
+    padding-top: 100px;
+
+}
+
+.imagesMeme div > img {
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+
+/* Footer */
+
+footer {
+    color: white;
+    text-align: center;
+	margin-top: 100px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
+    position: static;
+    background: rgba(29, 29, 29, 0.945);
+    font-size: 20px;
+}
+
+footer > h3 {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/* Line */
+
+hr {
+    border:none;
+    color:#fff;
+    background-color:black;
+    height: 3px;
+    width: 80%;
+    margin-left: 3%;
+}
+
